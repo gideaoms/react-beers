@@ -17,35 +17,37 @@ class BeerDetails extends Component {
     }
 
     return (
-      <div>
-        <Link to='/'>Back</Link>
-        <div>
+      <div className='container'>
+        <Link to='/' className='link'>
+          Back
+        </Link>
+        <hr className='divisor' />
+        <div className='input-group'>
           <span>ID</span>
           <input type='text' value={this.props.beer.data.id} disabled />
         </div>
-        <div>
+        <div className='input-group'>
           <span>Name</span>
           <input type='text' value={this.props.beer.data.name} disabled />
         </div>
-        <div>
+        <div className='input-group'>
           <span>Tagline</span>
           <input type='text' value={this.props.beer.data.tagline} disabled />
         </div>
-        <div>
-          <span>Image</span>
-          <img
-            style={{ width: '150px' }}
-            src={this.props.beer.data.image_url}
-            alt={this.props.beer.data.name}
-          />
-        </div>
-        <div>
+        <div className='input-group'>
           <span>Description</span>
           <textarea
             defaultValue={this.props.beer.data.description}
             cols='30'
-            rows='10'
+            rows='7'
             disabled
+          />
+        </div>
+        <div className='input-group'>
+          <span>Image</span>
+          <img
+            src={this.props.beer.data.image_url}
+            alt={this.props.beer.data.name}
           />
         </div>
       </div>

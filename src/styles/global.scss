@@ -1,10 +1,72 @@
 @import "../../node_modules/normalize.css";
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: $colorPrimary;
+  background-color: $background;
+}
+
+.container {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.divisor {
+  margin: 15px 0;
+  border-bottom: 1px solid $colorSecundary;
+}
+
+.link {
+  color: $link;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  border-bottom: 1px solid $colorSecundary;
+  padding: 0.75rem;
+}
+
+.table td {
+  padding: 0.75rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid $colorSecundary;
+    color: $colorPrimary;
+    border-radius: 3px;
+  }
+
+  img {
+    width: 150px;
+  }
 }

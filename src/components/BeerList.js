@@ -17,20 +17,22 @@ class BeerList extends Component {
     }
 
     return (
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Tagline</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.props.beer.list.data.map(beer => (
-            <BeerResume key={beer.id} beer={beer} />
-          ))}
-        </tbody>
-      </table>
+      <div className='container'>
+        <table className='table'>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Tagline</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.props.beer.list.data.map(beer => (
+              <BeerResume key={beer.id} beer={beer} />
+            ))}
+          </tbody>
+        </table>
+      </div>
     )
   }
 }

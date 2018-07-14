@@ -7,7 +7,9 @@ const BeerResume = ({ beer: { id, name, tagline } }) => (
     <td>{name}</td>
     <td>{tagline}</td>
     <td>
-      <Link to={`/${id}`}>Details</Link>
+      <Link to={`/${id}`} className='link'>
+        Details
+      </Link>
     </td>
   </tr>
 )
