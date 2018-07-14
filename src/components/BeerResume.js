@@ -16,7 +16,7 @@ const BeerResume = ({ beer: { id, name, tagline } }) => (
 
 BeerResume.propTypes = {
   beer: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.any.isRequired,
     name: PropTypes.string.isRequired,
     tagline: PropTypes.string.isRequired
   }).isRequired
