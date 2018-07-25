@@ -7,6 +7,7 @@ import Routes from './config/routes'
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
+      <h1>v4</h1>
       <Routes />
     </BrowserRouter>
   </Provider>
