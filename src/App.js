@@ -9,6 +9,7 @@ const App = () => (
     <BrowserRouter>
       <h1>v4</h1>
       <Routes />
+      <h1>test2</h1>
     </BrowserRouter>
   </Provider>
 )
